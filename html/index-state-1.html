@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main-state-1.css">
+    <title>My Letter</title>
+</head>
+<body>
+    <header>
+        <a href="#"><div class="logo"></div></a>
+        <a href="#">Edit details in your cover letter</a>
+    </header>
+
+    <section class="content state2">
+        <p class='h2-like'>Your profile is ready. Get your personalized cover letter now for less than the price of a cup of coffee and improve your career.</p>
+
+        <div>
+            <div class="products">
+                <div class="product sale">
+                    <div class="container">
+                        <div class="align-info">
+                            <div class="image-product" style="background-image: url('../img/annul-plan.png');"></div>
+
+                            <div class="info">
+                                <h6>Annual Plan</h6>
+                                <span class="price">$39.00 <span>/ year</span> </span>
+                                <p>Your Premium plan will auto-renew. </p>
+                                <p>Cancel any time.</p>
+                            </div>
+                        </div>
+
+                        <button onclick="window.location='./index-state-2.html'">Change</button>
+                    </div>
+                </div>
+
+                <div class="payment-system">
+                    <a href="#" style="background-image: url('../img/american-express.png');"></a>
+                    <a href="#" style="background-image: url('../img/discover.png');"></a>
+                    <a href="#" style="background-image: url('../img/mastercard.png');"></a>
+                    <a href="#" style="background-image: url('../img/visa.png');"></a>
+                    <a href="#" style="background-image: url('../img/jsb.png');"></a>
+                    <a href="#" style="background-image: url('../img/diners-club.png');"></a>
+                </div>
+
+                <form action="#" method="post">
+                    <div class="card-date">
+                        <div class="card-number width-elem invalid">
+                            <label for="card-number">Card number</label>
+                            <div>
+                                <input type="text" id="card-number" placeholder="Enter card number" required pattern="([0-9]{4}\s?){3,4}">
+                                <div class="icons"></div>
+                                <!-- <p class="error">Minimum length 12<br>Credit card number is not valid</p> -->
+                            </div>
+                        </div>
+
+                        <div class="month invalid">
+                            <label for="month">Exp. month</label>
+                            <select id="month" name="month" required>
+                                <option disabled selected></option>
+                                <option value="jan">1-January</option>
+                                <option value="feb">2-February</option>
+                                <option value="mar">3-March</option>
+                                <option value="apr">4-April</option>
+                                <option value="may">5-May</option>
+                                <option value="jun">6-June</option>
+                                <option value="jul">7-July</option>
+                                <option value="aug">8-August </option>
+                                <option value="sep">9-September</option>
+                                <option value="oct">10-October</option>
+                                <option value="nov">11-November</option>
+                                <option value="dec">12-December</option>
+                            </select>
+                            <p class="error">You entered incorrect data</p>
+                        </div>
+
+                        <div class="year invalid">
+                            <label for="year">Exp. year</label>
+                            <div class="decoration">
+                                <select id="year" name="year" required>
+                                    <option disabled selected></option>
+                                    <option value="2018">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                                <div class="icons"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-date">
+                        <div class="first-name width-elem invalid">
+                            <label for="first-name">Cardholder First Name</label>
+                           <div>
+                              <input type="text" id="first-name" placeholder="Enter First Name" required pattern="[A-Z][a-z]+">
+                              <div class="icons"></div>
+                           </div>
+                        </div>
+
+                        <div class="last-name width-elem invalid">
+                            <label for="last-name">Cardholder Last Name</label>
+                            <div>
+                                <input type="text" id="last-name" placeholder="Enter Last Name" required pattern="[A-Z][a-z]+">
+                                <div class="icons"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Confirm"/>
+                    <span>Secure credit card payment</span>
+                </form>
+
+                <p>Your card will be automatically attached to your profile, you can remove it at any time.</p>
+                <p>By clicking “Confirm” you agree to the <a href="#">Terms & Conditions</a></p>
+            </div>
+
+            <div class="description">
+                <div><p class="h3-like">Best price guaranteed</p></div>
+                <p>Your plan will include:</p>
+
+                <div class="list">
+                    <ul>
+                        <li>Unlimited Cover Letters</li>
+                        <li>50+ custom templates</li>
+                        <li>Creative designs</li>
+                        <li>Custom backgrounds</li>
+                        <li>More than 15 color schemes</li>
+                        <li>Create multiple versions</li>
+                        <li>Custom sections</li>
+                        <li>Unlimited PDF downloads</li>
+                        <li>Email sharing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <ul>
+           <li>
+               <div class="photo-user" style="background-image: url(../img/user-1.png);"></div>
+               <div  class="user-info">
+                   <p class="name-user">Deborah H.</p>
+                   <p class="review">“It is important to show your skills in a cover letter; I think you have already heard it before”. Only in this case, you will have an opportunity to prove your abilities in the interview. I decided to take the help of qualified professionals. My skills were demonstrated in the right way.”</p>
+               </div>
+           </li>
+
+           <li>
+               <div class="photo-user" style="background-image: url(../img/user-2.png);"></div>
+               <div  class="user-info">
+                   <p class="name-user">Cooper D.</p>
+                   <p class="review">“I always love a wide selection of something, and the CL has satisfied my needs in this case. Many variations of strengths and designs impressed me and made me push the matter through. And I did not regret my choice when the company sent me an offer for cooperation.”</p>
+               </div>
+           </li>
+        </ul>
+
+        <div class="preloader">
+            <a href="#" class="circule active-circule"></a>
+            <a href="#" class="circule"></a></span>
+            <a href="#" class="circule"></a></span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_conteiner-info">
+            <a href="#"><div class="footer_logo"></div></a>
+
+            <div class="footer_nav">
+                <a href="#">Private Policy</a>
+                <a href="#">Term of Use</a>
+            </div>
+        </div>
+
+        <div class="link-rights">
+            <a href="#">© 2019, My Letter. All rights reserved.</a>
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,8 @@
+@font-face{
+	font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular.woff") format("woff");
+}
+@font-face{
+	font-family: "Montserrat";
+    src: url("../fonts/Montserrat.woff") format("woff");
+}

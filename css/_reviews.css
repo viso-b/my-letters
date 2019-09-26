@@ -1,0 +1,52 @@
+.reviews {
+    padding: 30px 82px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews > ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviews > ul li{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews .photo-user{
+    width: 80px;
+    height: 80px;
+    background: no-repeat center/cover;
+    margin-right: 20px;
+}
+
+.reviews li .user-info{
+    max-width: 432px;
+    margin-bottom: 25px
+}
+
+.reviews li .user-info .name-user{
+    font: 700 18px/28px OpenSansRegular;
+    color: #333333;
+}
+
+.reviews li .user-info .review{
+    text-align: left;
+    font: 15px/25px OpenSansRegular;
+    color: #646464;
+}
+.reviews .preloader {
+    display: flex;
+    justify-content: center;
+}
+.reviews .preloader .circule{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #E8E8E8;
+    margin: 0 2px;
+}
+.reviews .preloader .active-circule{
+    background-color: #3D8F85;
+}

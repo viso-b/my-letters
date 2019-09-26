@@ -1,0 +1,13 @@
+@import '_header.css';
+@import '_products-states-2.css';
+@import '_reviews.css';
+@import '_footer.css';
+@import '_adaptation.css';
+@import '_fonts.css';
+
+:root{
+    --main-color: #3D8F85;
+    --background-product: #ffffff;
+    --font-white: #ffffff;
+    --srift-color: #333333;
+};

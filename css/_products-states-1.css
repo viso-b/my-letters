@@ -1,0 +1,358 @@
+section.content{
+    padding: 82px 142px;
+}
+section.content p.h2-like{
+    display: block;
+    max-width: 920px;
+    margin: 37px auto;
+    text-align: center;
+    font: 900 26px/36px OpenSansRegular;
+    letter-spacing: 0.52px;
+    color: var(--srift-color);
+}
+section.content.state2 > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+
+/*Styles description for product and for the purchase form*/
+.products{
+    display: flex;
+    flex-direction: column;
+}
+.content .product{
+    width: 532px;
+    height: 116px;
+    background-color: var(--background-product);
+    border: 1px solid #D4D9E6;
+    border-radius: 7px;
+    background-color: #ffffff: 
+}
+.products .product .time-sale{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 4px 4px 0px 0px;
+    color: var(--font-white);
+}
+.products .product .time-sale p{
+    text-transform: uppercase;
+    font: 900 18px/25px OpenSansRegular;
+    letter-spacing: 0.72px
+}
+.products .product .time-sale .end-date-sale{
+    font: Bold 16px/22px OpenSansRegular;
+    letter-spacing: 0.42px;
+    opacity: 0.69;
+}
+
+.product .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 45px 8px 25px;
+}
+.product .container .align-info{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.products .product.sale{
+    border: 2px solid var(--main-color);
+}
+
+.product .container .info{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.product .container .image-product{
+    width: 83px;
+    height: 95px;
+    margin-right: 23px;
+    background: no-repeat center/contain
+}
+.product .container h6{
+    font: 900 16px/25px OpenSansRegular;
+    color: #646464;
+}
+
+.product .container .additional-info{
+    display: inline-block;
+    font: 9px/14px OpenSansRegular;
+    color: #646464;
+}
+.product .container .price{
+    display: inline-block;
+    font: 900 16px/23px Montserrat;
+    letter-spacing: 0.64px;
+    color:var(--main-color)
+}
+.product .container .price > span{
+font: 10px/14px OpenSansRegular;
+color: #646464;
+}
+.product .container p{
+    font: 10px/14px OpenSansRegular;
+    color: #585858;
+    max-width: 223px;
+}
+
+.products .product button {
+    width: 118px;
+    height: 37px;
+    border: 2px solid var(--main-color);
+    border-radius: 7px;
+    user-select: none;
+    cursor: pointer;
+    font: 900 13px/16px Montserrat;
+    color: var(--main-color);
+}
+
+
+/*Payment-system*/
+.products .payment-system {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 470px;
+    margin-top: 25px;
+}
+.products .payment-system a{
+    display: block;
+    height: 30px;
+    width: 88px;
+    background: no-repeat center/contain;
+}
+
+/*Form*/
+.card-date, .user-date{
+    display: flex;
+}
+.card-date > div, .user-date > div{
+    display: flex;
+    flex-direction: column;
+}
+.card-date label, .user-date label{
+    margin-top: 15px;
+    font: 10px/19px OpenSansRegular;
+    color: #333333;
+}
+.year label{
+    transform: translateX(30px);
+}
+.card-date input,
+.card-date select,
+.user-date input{
+    padding: 0 15px;
+    background-color: #ffffff;
+    border: 1px solid #D4D9E6;
+    border-radius: 7px;
+    font: 15px/20px OpenSansRegular;
+    letter-spacing: 0.3px;
+}
+.card-date input,
+.user-date input{
+    color: #B6B6B6;
+}
+.width-elem{
+    width: 250px;
+}
+.card-date input#card-number,
+.user-date input#first-name,
+.user-date input#last-name{
+
+   height: 40px;
+}
+.card-date input ~ .error,
+.user-date input ~ .error,
+.card-date select ~ .error,
+.card-date input + div.icons,
+.user-date input + div.icons{
+    display: none;
+}
+
+.card-date .card-number,
+.user-date .first-name{
+   margin-right: 10px;
+}
+
+.card-date #month{
+    width: 130px;
+    height: 40px;
+}
+
+.card-date #year{
+    width: 100px;
+    height: 40px;
+}
+.card-date .year .decoration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-date .year .decoration:before{
+    content: '';
+    border-left: 3px solid #585858;
+    width: 8px;
+    height: 12px;
+    transform: skewX(-30deg);
+    margin:0 10px;
+}
+
+form input[type="submit"]{
+    width: 127px;
+    height: 40px;
+    margin: 18px 10px 10px 0;
+    background-color: #E24C2C;
+    border-radius: 7px;
+    text-align: center;
+    font: 900 15px/19px Montserrat;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+    opacity: 0.6;
+    user-select: none;
+    cursor: pointer;3
+}
+form input[type="submit"]:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 20px #E24C2C87;
+}
+form span{
+    font: 11px/17px OpenSansRegular;
+    letter-spacing: 0;
+    color: #B6B6B6;
+}
+form span:before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    background: url('../img/safe.png') no-repeat center/contain;
+}
+
+.products > p{
+    font: 10px/15px OpenSansRegular;
+    color: #585858;
+}
+.products > p > a{
+    text-decoration: underline;
+    color: #585858;
+}
+
+
+/*Inputs validation*/
+.invalid input:focus:invalid{
+    border: 1px solid red;
+    width: 219px;
+    color: #333333;
+}
+
+.invalid input:focus:invalid~.error,
+.invalid select:invalid~.error{
+    display: block;
+    max-width: 143px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    font: 10px/14px OpenSansRegular;
+    color: #E24C2C;
+}
+
+.invalid > div{
+    display: flex;
+    align-items: center;
+}
+.invalid input:valid,
+.invalid select:valid{
+    width: 219px;
+    border: 1px solid #2F7E74;
+    border-radius: 7px; 
+    color: #333333;
+    background-color: #ffffff; 
+}
+.invalid input:invalid + div{
+    display: inline-block;
+    margin-left: 1px;
+    width: 25px;
+    height: 25px;
+    background: url('../img/invalid.png') no-repeat center/contain;
+}
+.invalid input:valid + div{
+    display: inline-block;
+    margin-left: 1px;
+    width: 25px;
+    height: 25px;
+    background: url('../img/valid.png') no-repeat center/contain;
+}
+
+/*Styles for product descriptions*/
+section.content .description{
+    display: flex;
+    flex-direction: column;
+}
+section.content .description div:first-of-type{
+    width: 408px;
+    height: 70px;
+    background: url('../img/description_heading.png') no-repeat center/contain;
+    display: flex;
+    justify-content: center;
+}
+
+.description .h3-like:after,.h3-like:before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url('../img/star-for-header.svg') no-repeat center/cover;
+    margin: 0 10px;
+}
+section.content .description div p{
+    font-size: 18px;
+    font-family: OpenSansRegular;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--font-white);
+    display: flex;
+    align-items: center;
+    transform: translateY(-7px);
+}
+
+section.content .description > p{
+    font: Bold 18px OpenSansRegular;
+    text-align: center;
+    line-height: 24px;
+    color: #585858;
+}
+
+section.content .description .list{
+    display: flex;
+    justify-content: center;
+}
+section.content .description li{
+    font: 16px OpenSansRegular;
+    line-height: 40px;
+    color: var(--srift-color);
+}
+section.content .description li:before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    transform: rotate(45deg);
+    margin-right: 20px; 
+    margin-bottom: 5px;
+}
+
+@media (max-width: 980px){
+    section.content .description{
+        display: none;
+    }
+}

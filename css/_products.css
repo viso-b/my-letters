@@ -1,0 +1,176 @@
+section.content{
+    padding: 82px;
+}
+section.content p.h2-like{
+    display: block;
+    max-width: 920px;
+    margin: 37px auto;
+    text-align: center;
+    font: 900 26px/36px OpenSansRegular;
+    letter-spacing: 0.52px;
+    color: var(--srift-color);
+}
+section.content > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*Styles description for products*/
+.content .products{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .products .product{
+    width: 350px;
+    height: 475px;
+    background-color: var(--background-product);
+    border: 1px solid #D4D9E6;
+    border-radius: 7px;
+    margin-right: 28px;
+    text-align: center;
+    background-color: #ffffff: 
+}
+.product .container{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0 45px 25px;
+}
+.product .container .image-product{
+    width: 90px;
+    height: 100px;
+    margin: 0 auto;
+    background: no-repeat center/contain
+}
+.product .container h6{
+    font: 900 18px/28px OpenSansRegular;
+    color: #646464;
+    opacity: 1;
+    padding: 20px 0 28px;
+}
+.product .container .additional-info{
+    font: 11px/17px OpenSansRegular;
+    color: #646464;
+}
+.product .container .price{
+    display: block;
+    font: 900 32px/39px Montserrat;
+    letter-spacing: 0.64px;
+    color:var(--main-color)
+}
+.product .container .price > span{
+    font: 13px/20px OpenSansRegular;
+    color: #646464;
+}
+.product .container p{
+    font: 13px/20px OpenSansRegular;
+    color: #585858;
+    padding: 13px 0 33px;
+    max-width: 223px;
+}
+
+.products .product button {
+    width: 260px;
+    height: 60px;
+    background-color: #E24C2C;
+    border-radius: 7px;
+    font: 900 15px/19px Montserrat;
+    color: #FFFFFF;
+    user-select: none;
+    cursor: pointer;
+}
+.products .product button:hover {
+    box-shadow: 0px 0px 20px #E24C2C87;
+}
+
+
+/*Styles description for discounted products*/
+.products .product .time-sale{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 87px;
+    background-color: var(--main-color);
+    border-radius: 4px 4px 0px 0px;
+    color: var(--font-white);
+}
+.products .product .time-sale p{
+    text-transform: uppercase;
+    font: 900 24px/41px OpenSansRegular;
+    letter-spacing: 0.72px
+}
+.products .product .time-sale #end-date-sale{
+    font: Bold 21px/29px OpenSansRegular;
+    letter-spacing: 0.42px;
+    opacity: 0.69;
+} 
+
+.products .product.sale{
+    border: 2px solid var(--main-color);
+}
+.products .product.sale .container{
+    height: unset;
+    justify-content: unset;
+}
+.products .product.sale .container h6{
+    padding-bottom: 12px;
+}
+
+
+/*Styles for product descriptions*/
+section.content .description div:first-of-type{
+    width: 408px;
+    height: 70px;
+    background: url('../img/description_heading.png') no-repeat center/contain;
+    display: flex;
+    justify-content: center;
+}
+.description .h3-like:after,.h3-like:before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background: url('../img/star-for-header.svg') no-repeat center/cover;
+    margin: 0 10px;
+}
+section.content .description div p{
+    font-size: 18px;
+    font-family: OpenSansRegular;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--font-white);
+    display: flex;
+    align-items: center;
+    transform: translateY(-7px);
+}
+section.content .description > p{
+    font: Bold 18px OpenSansRegular;
+    text-align: center;
+    line-height: 24px;
+    color: #585858;
+}
+
+section.content .description .list{
+    display: flex;
+    justify-content: center;
+}
+section.content .description li{
+    font: 16px OpenSansRegular;
+    line-height: 40px;
+    color: var(--srift-color);
+}
+section.content .description li:before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    transform: rotate(45deg);
+    margin-right: 20px; 
+    margin-bottom: 5px;
+}
