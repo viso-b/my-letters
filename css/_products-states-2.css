@@ -19,12 +19,10 @@ section.content.state2 > div{
 
 /*Styles description for product and for the purchase form*/
 .content .product{
-    width: 532px;
-    height: 152px;
     background-color: var(--background-product);
     border: 1px solid #D4D9E6;
     border-radius: 7px;
-    background-color: #ffffff: 
+    background-color: #ffffff;
 }
 .products{
     display: flex;
@@ -54,6 +52,7 @@ section.content.state2 > div{
 .product .container{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 8px 45px 8px 25px;
 }
@@ -120,32 +119,31 @@ color: #646464;
 }
 
 
-
 /*Payment-system*/
 .products .payment-system {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 470px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 .products .payment-system a{
     display: block;
     height: 30px;
     width: 88px;
+    margin-top: 10px;
     background: no-repeat center/contain;
 }
 
-
 /*Form*/
-.card-date, .user-date{
+.card-info, .user-date{
     display: flex;
 }
-.card-date > div, .user-date > div{
+.invalid{
     display: flex;
     flex-direction: column;
 }
-.card-date label, .user-date label{
+.card-info label, .user-date label{
     margin-top: 15px;
     font: 10px/19px OpenSansRegular;
     color: #333333;
@@ -153,8 +151,8 @@ color: #646464;
 .year label{
     transform: translateX(30px);
 }
-.card-date input,
-.card-date select,
+.card-info input,
+.card-info select,
 .user-date input{
     padding: 0 15px;
     background-color: #ffffff;
@@ -163,48 +161,50 @@ color: #646464;
     font: 15px/20px OpenSansRegular;
     letter-spacing: 0.3px;
 }
-.card-date input,
+.card-info input,
 .user-date input{
     color: #B6B6B6;
 }
 .width-elem{
     width: 250px;
 }
-.card-date input#card-number,
+.card-info input#card-number,
 .user-date input#first-name,
 .user-date input#last-name{
 
    height: 40px;
 }
-.card-date input ~ .error,
+.card-info input ~ .error,
 .user-date input ~ .error,
-.card-date select ~ .error,
-.card-date input + div.icons,
+.card-info select ~ .error,
+.card-info input + div.icons,
 .user-date input + div.icons{
     display: none;
 }
 
-.card-date .card-number,
+.card-info .card-number,
 .user-date .first-name{
    margin-right: 10px;
 }
-
-.card-date #month{
+.card-info .card-date{
+    display: flex;
+}
+.card-info #month{
     width: 130px;
     height: 40px;
 }
 
-.card-date #year{
+.card-info #year{
     width: 100px;
     height: 40px;
 }
-.card-date .year .decoration{
+.card-info .year .decoration{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.card-date .year .decoration:before{
+.card-info .year .decoration:before{
     content: '';
     border-left: 3px solid #585858;
     width: 8px;
@@ -262,6 +262,14 @@ form span:before{
     color: #333333;
 }
 
+.invalid input:focus:invalid + div{
+    display: inline-block;
+    margin-left: 1px;
+    width: 25px;
+    height: 25px;
+    background: url('../img/invalid.png') no-repeat center/contain;
+}
+
 .invalid input:focus:invalid~.error,
 .invalid select:invalid~.error{
     display: block;
@@ -284,13 +292,7 @@ form span:before{
     color: #333333;
     background-color: #ffffff; 
 }
-.invalid input:invalid + div{
-    display: inline-block;
-    margin-left: 1px;
-    width: 25px;
-    height: 25px;
-    background: url('../img/invalid.png') no-repeat center/contain;
-}
+
 .invalid input:valid + div{
     display: inline-block;
     margin-left: 1px;

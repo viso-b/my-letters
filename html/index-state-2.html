@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main-state-2.css">
-    <script src="../script.js" async></script>
+    <script src="../js/script.js" async></script>
     <title>My Letter</title>
 </head>
 <body>
@@ -53,7 +53,7 @@
                 </div>
 
                 <form action="#" method="post">
-                    <div class="card-date">
+                    <div class="card-info">
                         <div class="card-number width-elem invalid">
                             <label for="card-number">Card number</label>
                             <div>
@@ -63,45 +63,47 @@
                             </div>
                         </div>
 
-                        <div class="month invalid">
-                            <label for="month">Exp. month</label>
-                            <select id="month" name="month" required>
-                                <option disabled selected></option>
-                                <option value="jan">1-January</option>
-                                <option value="feb">2-February</option>
-                                <option value="mar">3-March</option>
-                                <option value="apr">4-April</option>
-                                <option value="may">5-May</option>
-                                <option value="jun">6-June</option>
-                                <option value="jul">7-July</option>
-                                <option value="aug">8-August </option>
-                                <option value="sep">9-September</option>
-                                <option value="oct">10-October</option>
-                                <option value="nov">11-November</option>
-                                <option value="dec">12-December</option>
-                            </select>
-                            <p class="error">You entered incorrect data</p>
-                        </div>
-
-                        <div class="year invalid">
-                            <label for="year">Exp. year</label>
-                            <div class="decoration">
-                                <select id="year" name="year" required>
+                        <div class="card-date">
+                            <div class="month invalid">
+                                <label for="month">Exp. month</label>
+                                <select id="month" name="month" required>
                                     <option disabled selected></option>
-                                    <option value="2018">2019</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2021">2021</option>
-                                    <option value="2022">2022</option>
-                                    <option value="2023">2023</option>
-                                    <option value="2024">2024</option>
-                                    <option value="2025">2025</option>
-                                    <option value="2026">2026</option>
-                                    <option value="2027">2027</option>
-                                    <option value="2028">2028</option>
-                                    <option value="2029">2029</option>
-                                    <option value="2030">2030</option>
+                                    <option value="jan">1-January</option>
+                                    <option value="feb">2-February</option>
+                                    <option value="mar">3-March</option>
+                                    <option value="apr">4-April</option>
+                                    <option value="may">5-May</option>
+                                    <option value="jun">6-June</option>
+                                    <option value="jul">7-July</option>
+                                    <option value="aug">8-August </option>
+                                    <option value="sep">9-September</option>
+                                    <option value="oct">10-October</option>
+                                    <option value="nov">11-November</option>
+                                    <option value="dec">12-December</option>
                                 </select>
-                                <div class="icons"></div>
+                                <p class="error">You entered incorrect data</p>
+                            </div>
+    
+                            <div class="year invalid">
+                                <label for="year">Exp. year</label>
+                                <div class="decoration">
+                                    <select id="year" name="year" required>
+                                        <option disabled selected></option>
+                                        <option value="2018">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+                                    </select>
+                                    <div class="icons"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

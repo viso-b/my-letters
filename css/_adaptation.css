@@ -72,12 +72,49 @@
         border: none;
         margin-top: 10px;
     }
+
+    .products{
+        align-items: center;
+    }
+    .product .align-info{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .product .container{
+        padding: 0 15px;
+        justify-content: flex-end;
+
+    }
+    .product .container > button{
+        margin-bottom: 10px;
+    }
+/*form*/
+    .card-info, .user-date{
+        flex-direction: column;
+    }
+    form{
+        align-self: center;
+        
+    }
 }
 
 @media (max-width: 480px){
 /*section content*/
     section.content{
         padding: 20px;
+    }
+    .products .payment-system {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .products .product .time-sale{
+        padding: 0 10px;
+    }
+    .products .product .time-sale p{
+        font: 800 14px/18px OpenSansRegular;
+    }
+    .products .product .time-sale #end-date-sale{
+        font: 800 12px/18px OpenSansRegular;
     }
 
 /*section reviews*/
@@ -87,9 +124,14 @@
     .reviews .photo-user{
         width: 70px;
         height: 70px;
+        margin-right: 10px;
+
     }
     .reviews li .user-info{
         max-width: 300px;
+    }
+    .reviews li .user-info .review{
+        line-height: 20px;
     }
 
 /*footer*/
